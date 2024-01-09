@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6EFE1"
+    android:backgroundTint="#A6EFE1"
+    tools:context=".actividades.ActividadUno">
+
+    <LinearLayout
+        android:layout_width="214dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayoutActividadDos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/gato_crud" />
+
+        <TextView
+            android:id="@+id/textViewCRUD"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:text="CRUD"
+            android:textSize="48sp" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutActividadDos"
+        android:layout_width="275dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="88dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuenta"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/escribirCuentaActividadUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewNombreCuenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/escribirNombreActividadUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewCargo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cargo"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/escribirCargoActividadUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewAbono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abono"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/escribirAbonoActividadUno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout3"
+        android:layout_width="332dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutActividadDos">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/botonRecuperar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCCCC"
+                android:text="Recuperar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/botonLimpiar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCCCC"
+                android:text="Limpiar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/botonGrabar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCCCC"
+                android:text="Grabar"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/botonBorrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCCCC"
+                android:text="Borrar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/botonModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCCCC"
+                android:text="Modificar"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/botonConsultar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#CCCCCC"
+                android:text="Consultar"
+                android:textColor="#000000" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

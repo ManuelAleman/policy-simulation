@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPoliza"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutPoliza"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:animateLayoutChanges="true"
+            android:background="#6797fe"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/polizaInfoDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:text="POLIZA INFORMACION"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/informacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/polizaID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="1"
+                    android:text="IDINFO"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCuenta1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CUENTA 1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCuenta2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CUETNA 2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCuenta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CUETNA 3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCuenta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CUETNA 4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCuenta5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CUETNA 5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/fechaID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="4dp"
+                    android:text="FECHA"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionFecha1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="DESC 1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionFecha2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="DESC 2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionFecha3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="DESC 3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionFecha4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="DESC 4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionFecha5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="DESC 5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cargosInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cargoID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="4dp"
+                    android:text="TIPO"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCargo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="TIPO 1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCargo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="TIPO 2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCargo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="TIPO 3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCargo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="TIPO 4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionCargo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="TIPO 5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/abonoInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/abonoID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="IMPORTE"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionAbono1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CARGO 1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionAbono2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CARGO 2"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionAbono3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CARGO 3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionAbono4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CARGO 4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/opcionAbono5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/border_background"
+                    android:gravity="center"
+                    android:text="CARGO 5"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/polizaInfoBotID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="430dp"
+                android:text="ID"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
